@@ -1,7 +1,0 @@
-function XYZ = rotate(XYZ, phi, theta, psi)
-
-R_roll = [1 0 0; 0 cos(phi) -sin(phi); 0 sin(phi) cos(phi)];
-
-R_theta = [cos(theta) 0 sin(theta); 0 1 0; -sin(the)]
-
-end

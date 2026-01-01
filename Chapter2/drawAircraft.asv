@@ -6,16 +6,15 @@ function handle = drawAircraft(pn, pe, pd, phi, theta, psi, handle)
 
      V = translate(V', pn, pe, pd)';
 
-     R = [0 1 0; 1 0 0; 0 0 1];
+     R = [0 1 0; 1 0 0; 0 0 -1];
 
      V = V*R;
 
      if isempty(handle)
          handle = patch('Vertices', V, 'Faces', F, 'FaceVertexCData', C, 'FaceColor','flat');
          view(3);
-         axis equal;
      else 
-         set(handle, 'Vertices', V, 'Faces', F);
+         set(handle, 'Verices', V, 'Faces', F);
      end
 
 
